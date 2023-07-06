@@ -1,9 +1,17 @@
 import React from 'react'
 
-function Button() {
+function Button({ background, data, color }) {
   return (
-    <div className='bg-white w-20 h-20 rounded-lg flex justify-center items-center drop-shadow-lg cursor-pointer'>
-        1
+    <div className='w-[72px] h-[72px] rounded-[24px] flex justify-center items-center cursor-pointer shadow-md' style={{backgroundColor: background}}>
+        {color ? (
+          <p className='text-[24px]' style={{color: color}}>
+            {data}
+          </p>
+        ) : (
+          <p className='text-[24px]'>
+            {data}
+          </p>
+        )}
     </div>
   )
 }

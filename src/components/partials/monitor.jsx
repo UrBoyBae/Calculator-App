@@ -2,8 +2,13 @@ import React from 'react'
 
 function Monitor() {
   return (
-    <div className='bg-gray-200 w-full h-16 rounded-md text-2xl flex justify-end items-center px-4'>
-      1250000
+    <div className='flex flex-col items-end mb-4'>
+      <p className='text-[25px] font-light text-[#848587]'>
+        6,291÷5
+      </p>
+      <p className='text-[60px] font-light'>
+        1,258.2
+      </p>
     </div>
   )
 }
