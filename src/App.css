@@ -8,3 +8,13 @@ body {
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 }
+
+#toggleTheme + label .toggleSwitch {
+  translate: calc(0px);
+  transition: all 0.2s ease;
+}
+
+#toggleTheme:checked + label .toggleSwitch {
+  translate: calc(36px);
+  transition: all 0.2s ease;
+}
